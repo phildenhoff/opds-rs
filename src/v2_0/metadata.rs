@@ -111,6 +111,10 @@ pub enum AcquisitionKind {
     #[serde(rename = "http://opds-spec.org/acquisition/buy")]
     Buy,
 
+    /// Indicates that a publication can be borrowed for a limited period of time.
+    #[serde(rename = "http://opds-spec.org/acquisition/borrow")]
+    Borrow,
+
     /// Indicates that a sub-set of the full publication is freely accessible
     /// at a given URI, without any prior requirement.
     #[serde(rename = "http://opds-spec.org/acquisition/sample")]
